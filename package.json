@@ -14,7 +14,7 @@
     "prepublish:next": "npm run build",
     "publish:next": "npm publish --access public --tag next",
     "lint": "tslint -p tsconfig.json -c tslint.json",
-    "prepare": "npm run build"
+    "prepare": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
