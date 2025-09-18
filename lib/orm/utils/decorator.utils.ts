@@ -56,7 +56,7 @@ export function addAttributeOptions(
 
 export function getOptions(target: any): any | undefined {
   const options = Reflect.getMetadata(OPTIONS_KEY, target);
-  return { ...options } || {};
+  return options ? { ...options } : {};
 }
 
 export function setOptions(target: any, options: any): void {
